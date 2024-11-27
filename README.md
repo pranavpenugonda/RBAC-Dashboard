@@ -16,25 +16,25 @@ The RBAC is a React-based web application designed to manage users, roles, and p
 
 ## User Management
 
-Add, edit, and delete users.
-Filter users by roles.
-Search users by name.
-Toggle user active/inactive status.
-Sort users alphabetically.
+- Add, edit, and delete users. <br>
+- Filter users by roles. <br>
+- Search users by name.<br>
+- Toggle user active/inactive status.<br>
+- Sort users alphabetically.<br>
 
 ## Role Management
 
-Add, edit, and delete roles.
-Assign permissions (Read, Write, Execute) to roles.
-Toggle role-specific permissions dynamically.
+- Add, edit, and delete roles.<br>
+- Assign permissions (Read, Write, Execute) to roles.<br>
+- Toggle role-specific permissions dynamically.<br>
 
 ## Permissions Management
 
-View all permissions and their status (Enabled/Disabled).
-Synchronize permission updates with roles.
-Toggle permissions and reflect changes across all associated roles.
-Synchronization
-Real-time synchronization of permissions and roles.
-Updates in the permissions view are immediately reflected in the roles view and vice versa.
+- View all permissions and their status (Enabled/Disabled).<br>
+- Synchronize permission updates with roles.<br>
+- Toggle permissions and reflect changes across all associated roles.<br>
+- Synchronization<br>
+- Real-time synchronization of permissions and roles.<br>
+- Updates in the permissions view are immediately reflected in the roles view and vice versa.<br>
 
 ## features screenshots
