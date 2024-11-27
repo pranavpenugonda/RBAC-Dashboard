@@ -1,0 +1,87 @@
+.role-management {
+  padding: 20px;
+}
+
+.role-management ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.role-management li {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  justify-content: space-between;
+  align-items: flex-start; /* Align content to the left */
+  margin: 10px 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 5px; /* Add rounded corners for a modern look */
+  background-color: #f9f9f9; /* Subtle background color for better readability */
+}
+
+.role-management li > ul {
+  margin: 10px 0 0 15px; /* Indent nested permissions list */
+}
+
+.role-management li > ul li {
+  margin: 5px 0; /* Add space between permissions */
+  font-size: 14px;
+}
+
+.role-management button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 5px 0; /* Space between buttons */
+}
+
+.role-management button:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 768px) {
+  .role-management li {
+    flex-direction: row; /* Align elements horizontally on larger screens */
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #f9f9f9;
+  }
+
+  .role-management li > ul {
+    margin: 0; /* Inline with main content for larger screens */
+    padding-left: 20px; /* Add some spacing between role and permissions */
+  }
+
+  .role-management li > ul li {
+    display: inline-block; /* Permissions appear inline on larger screens */
+    margin-right: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-management {
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .role-management li {
+    padding: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #f9f9f9;
+  }
+
+  .role-management li > ul li {
+    font-size: 12px; /* Smaller font for permissions */
+  }
+
+  .role-management button {
+    font-size: 12px; /* Reduce button font size */
+    width: 100%; /* Make buttons span full width for easier clicks */
+  }
+}

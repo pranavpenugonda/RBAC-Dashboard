@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  min-width: 100vw; /* Ensures the header spans the full viewport width */
+  box-sizing: border-box; /* Includes padding in the element's width */
+}
+
+nav {
+  display: flex;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+button {
+  background-color: #4caf50;
+  /* color: #4caf50; */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffffffcc; /* Slightly lighter hover effect */
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+  }
+
+  button {
+    width: 50%; /* Make buttons full-width on small devices */
+    margin-bottom: 5px;
+    background-color: #4caf50;
+  }
+}

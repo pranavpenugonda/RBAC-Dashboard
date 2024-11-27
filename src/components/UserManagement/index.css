@@ -1,0 +1,75 @@
+.user-management {
+  padding: 20px;
+}
+
+.user-management ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-management li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap if needed */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f9f9f9;
+}
+
+.user-management button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.user-management button:hover {
+  background-color: #45a049;
+}
+
+.additional-functionality {
+  display: flex;
+  flex-wrap: wrap; /* Stacks items if there's not enough space */
+  gap: 10px; /* Adds spacing between elements */
+  margin-bottom: 20px;
+}
+
+.additional-functionality input,
+.additional-functionality select {
+  flex: 1; /* Input and select take equal space */
+  min-width: 150px; /* Prevents fields from becoming too narrow */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.additional-functionality button {
+  flex: 0; /* Buttons maintain their natural size */
+}
+
+@media (max-width: 768px) {
+  .user-management li {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .user-management li span {
+    margin-bottom: 10px; /* Add spacing between name and buttons */
+  }
+
+  .additional-functionality {
+    flex-direction: column; /* Stack all functionality vertically */
+  }
+
+  .additional-functionality button,
+  .additional-functionality input,
+  .additional-functionality select {
+    width: 100%; /* Full width for better usability */
+    margin-bottom: 10px; /* Adds spacing between items */
+  }
+}

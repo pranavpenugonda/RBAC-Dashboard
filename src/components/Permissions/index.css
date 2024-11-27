@@ -1,0 +1,101 @@
+.permissions {
+  padding: 20px;
+}
+
+.permissions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.permissions li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f9f9f9;
+}
+
+.permissions button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.permissions button:hover {
+  background-color: #45a049;
+}
+
+.permission-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure full width on small devices */
+}
+
+.permission-item span {
+  margin: 5px 0; /* Add spacing for small screens */
+  font-size: 14px;
+  flex: 1; /* Allow items to adjust flexibly */
+}
+
+.status {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .permissions li {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align content to the left */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #f9f9f9;
+  }
+
+  .permissions button {
+    width: 100%; /* Make buttons span full width */
+    margin-top: 10px; /* Add space above buttons */
+  }
+
+  .permission-item span {
+    font-size: 13px; /* Slightly smaller text for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .permissions {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .permissions button {
+    font-size: 12px; /* Reduce button font size */
+  }
+
+  .permission-item span {
+    font-size: 12px; /* Further reduce text size */
+  }
+}
