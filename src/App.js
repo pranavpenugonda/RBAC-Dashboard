@@ -7,7 +7,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    loggedInUser: null, // Store selected user
+    loggedInUser: null,
     users: [
       { name: "Alice", role: "Admin", active: true },
       { name: "Bob", role: "Editor", active: true },
@@ -53,9 +53,9 @@ class App extends Component {
       { name: "Write", enabled: false },
       { name: "Execute", enabled: true },
     ],
-    view: "users", // Current view: "users", "roles", or "permissions"
-    filterRole: "", // Filter value for roles
-    searchQuery: "", // Search query
+    view: "users",
+    filterRole: "",
+    searchQuery: "",
   };
 
   loginUser = (user) => {
@@ -79,10 +79,7 @@ class App extends Component {
 
       if (name && role) {
         this.setState((prevState) => {
-          // Add the new user
           const users = [...prevState.users, { name, role, active: true }];
-
-          // Check if the role already exists, if not, add it
           const roleExists = prevState.roles.some((r) => r.name === role);
           const roles = roleExists
             ? prevState.roles
@@ -194,14 +191,9 @@ class App extends Component {
 
   updatePermission = (permissionIndex) => {
     this.setState((prevState) => {
-      // Create a deep copy of the permissions array
       const permissions = prevState.permissions.map((perm, index) =>
-        index === permissionIndex
-          ? { ...perm, enabled: !perm.enabled } // Toggle the specific permission
-          : perm
+        index === permissionIndex ? { ...perm, enabled: !perm.enabled } : perm
       );
-
-      // Update roles based on the changed permission
       const permissionName = permissions[permissionIndex].name;
       const roles = prevState.roles.map((role) => ({
         ...role,
@@ -211,7 +203,7 @@ class App extends Component {
         },
       }));
 
-      return { permissions, roles }; // Update both permissions and roles in state
+      return { permissions, roles };
     });
   };
 
