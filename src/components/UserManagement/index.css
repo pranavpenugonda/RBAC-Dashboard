@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allows items to wrap if needed */
+  flex-wrap: wrap;
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
@@ -34,42 +34,42 @@
 
 .additional-functionality {
   display: flex;
-  flex-wrap: wrap; /* Stacks items if there's not enough space */
-  gap: 10px; /* Adds spacing between elements */
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .additional-functionality input,
 .additional-functionality select {
-  flex: 1; /* Input and select take equal space */
-  min-width: 150px; /* Prevents fields from becoming too narrow */
+  flex: 1;
+  min-width: 150px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .additional-functionality button {
-  flex: 0; /* Buttons maintain their natural size */
+  flex: 0;
 }
 
 @media (max-width: 768px) {
   .user-management li {
-    flex-direction: column; /* Stack elements vertically on small screens */
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .user-management li span {
-    margin-bottom: 10px; /* Add spacing between name and buttons */
+    margin-bottom: 10px;
   }
 
   .additional-functionality {
-    flex-direction: column; /* Stack all functionality vertically */
+    flex-direction: column;
   }
 
   .additional-functionality button,
   .additional-functionality input,
   .additional-functionality select {
-    width: 100%; /* Full width for better usability */
-    margin-bottom: 10px; /* Adds spacing between items */
+    width: 100%;
+    margin-bottom: 10px;
   }
 }

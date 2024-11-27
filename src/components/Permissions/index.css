@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  flex-wrap: wrap;
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
@@ -38,13 +38,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Ensure full width on small devices */
+  width: 100%;
 }
 
 .permission-item span {
-  margin: 5px 0; /* Add spacing for small screens */
+  margin: 5px 0;
   font-size: 14px;
-  flex: 1; /* Allow items to adjust flexibly */
+  flex: 1;
 }
 
 .status {
@@ -67,35 +67,34 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Responsive styles for smaller devices */
 @media (max-width: 768px) {
   .permissions li {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align content to the left */
+    flex-direction: column;
+    align-items: flex-start;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #f9f9f9;
   }
 
   .permissions button {
-    width: 100%; /* Make buttons span full width */
-    margin-top: 10px; /* Add space above buttons */
+    width: 100%;
+    margin-top: 10px;
   }
 
   .permission-item span {
-    font-size: 13px; /* Slightly smaller text for smaller screens */
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
   .permissions {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
 
   .permissions button {
-    font-size: 12px; /* Reduce button font size */
+    font-size: 12px;
   }
 
   .permission-item span {
-    font-size: 12px; /* Further reduce text size */
+    font-size: 12px;
   }
 }

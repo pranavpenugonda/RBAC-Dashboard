@@ -58,24 +58,20 @@ class App extends Component {
     searchQuery: "", // Search query
   };
 
-  // Login functionality: select a user
   loginUser = (user) => {
     this.setState({ loggedInUser: user });
   };
 
-  // Set current view (users, roles, permissions)
   setView = (view) => {
     this.setState({ view });
   };
 
-  // Check if the logged-in user has permission for a specific section
   canManage = (section) => {
     const { loggedInUser, roles } = this.state;
     const role = roles.find((r) => r.name === loggedInUser?.role);
     return role?.permissions[section];
   };
 
-  // Add a new user
   addUser = () => {
     if (this.canManage("users")) {
       const name = prompt("Enter user name:");
@@ -106,7 +102,6 @@ class App extends Component {
     }
   };
 
-  // Delete a user
   deleteUser = (index) => {
     this.setState((prevState) => {
       const users = [...prevState.users];
@@ -115,7 +110,6 @@ class App extends Component {
     });
   };
 
-  // Edit user details
   editUser = (index) => {
     const name = prompt("Enter new user name:", this.state.users[index].name);
     const role = prompt("Enter new user role:", this.state.users[index].role);
@@ -128,7 +122,6 @@ class App extends Component {
     }
   };
 
-  // Toggle user status (active/inactive)
   toggleUserStatus = (index) => {
     this.setState((prevState) => {
       const updatedUsers = prevState.users.map((user, i) => {
@@ -141,7 +134,6 @@ class App extends Component {
     });
   };
 
-  // Sort users alphabetically by name
   sortUsers = () => {
     this.setState((prevState) => {
       const sortedUsers = [...prevState.users].sort((a, b) =>
@@ -151,12 +143,10 @@ class App extends Component {
     });
   };
 
-  // Filter users by role
   filterUsersByRole = (role) => {
     this.setState({ filterRole: role });
   };
 
-  // Search users by name
   searchUsers = (query) => {
     this.setState({ searchQuery: query });
   };
@@ -194,7 +184,6 @@ class App extends Component {
     }
   };
 
-  // Delete a role
   deleteRole = (index) => {
     this.setState((prevState) => {
       const roles = [...prevState.roles];
@@ -226,7 +215,6 @@ class App extends Component {
     });
   };
 
-  // Render view based on user role and selected section (users, roles, permissions)
   renderView = () => {
     const {
       view,
