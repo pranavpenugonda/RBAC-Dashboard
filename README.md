@@ -3,10 +3,9 @@
 ## RBAC (Role Based Access Control)
 
 ### setup instructions
-
-1. clone this repo
-2. run "npm install" to install all dependencies in package.json file
-3. run "npm start" to view view application at `localhost:3000`
+- clone this repo
+- run "npm install" to install all dependencies in package.json file
+- run "npm start" to view view application at `localhost:3000`
 
 ## project overview
 
