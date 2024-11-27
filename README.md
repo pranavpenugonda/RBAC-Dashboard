@@ -46,6 +46,7 @@ this is main page of application. Their are three views to show `users`, `roles`
 - permissions: Displays different permissions (`read, write, execute`)
 
 select Alice user 
+- he is admin; he can manage users, roles, permissions
 ![image](https://github.com/user-attachments/assets/50d6374f-e8bf-4166-95c3-d8340466a2a9)
 
 you can add user, sort existing users, search users, filter users by roles and also edit the usernames, roles and toggle the status of user from active to inactive and vice-versa and also delete the users.
@@ -83,6 +84,7 @@ read, write and execute permissions are visible here and you can toggle them and
 - you can see read permissions of all roles are no; means reflected successfully.
 
 ### similaryly check for other users(bob)
+- he is viewer means he has no access to manage users, roles, permissions
 ![image](https://github.com/user-attachments/assets/79abf324-12dc-4704-8cba-abc15ccaac4a)
 - he is editor and can edit the user permissions and can't edit roles and permissions
   ![image](https://github.com/user-attachments/assets/80819681-3430-4c62-87c2-3c6af35ced1e)
