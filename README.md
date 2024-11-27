@@ -51,7 +51,9 @@ select Alice user
 you can add user, sort existing users, search users, filter users by roles and also edit the usernames, roles and toggle the status of user from active to inactive and vice-versa and also delete the users.
 
 
-![image](https://github.com/user-attachments/assets/d54eaadc-0d2a-4368-8599-06d0bec652f7)
+### add functionality (added user mani)
+![image](https://github.com/user-attachments/assets/24948d91-7b3c-48da-9073-9e706b6ab449)
+
 
 
 ### search functionality
