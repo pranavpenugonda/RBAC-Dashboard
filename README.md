@@ -1,4 +1,4 @@
-# RBAC Dashboard using react.js
+![image](https://github.com/user-attachments/assets/d54eaadc-0d2a-4368-8599-06d0bec652f7)# RBAC Dashboard using react.js
 
 ## RBAC (Role Based Access Control)
 
@@ -38,3 +38,22 @@ The RBAC is a React-based web application designed to manage users, roles, and p
 - Updates in the permissions view are immediately reflected in the roles view and vice versa.<br>
 
 ## features screenshots
+![image](https://github.com/user-attachments/assets/1368ae59-2046-48fa-bbca-4685bad2de7a)
+this is main page of application. Their are three views to show `users`, `roles`, `permissions`
+
+- users: Displays the current available users (`alice, bob, charlie`)
+- roles: Displays different roles that are present (`admin, editor, viewer etc`)
+- permissions: Displays different permissions (`read, write, execute`)
+
+select Alice user 
+![image](https://github.com/user-attachments/assets/50d6374f-e8bf-4166-95c3-d8340466a2a9)
+
+you can add user, sort existing users, search users, filter users by roles and also edit the usernames, roles and toggle the status of user from active to inactive and vice-versa and also delete the users.
+
+
+
+
+
+
+
+
