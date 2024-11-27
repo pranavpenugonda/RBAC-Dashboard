@@ -26,7 +26,7 @@ The RBAC is a React-based web application designed to manage users, roles, and p
 
 - Add, edit, and delete roles.<br>
 - Assign permissions (Read, Write, Execute) to roles.<br>
-- Toggle role-specific permissions dynamically.<br>
+- displays which areas it can manage like users, roles, permissions
 
 ## Permissions Management
 
