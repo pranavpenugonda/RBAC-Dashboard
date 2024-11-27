@@ -83,13 +83,14 @@ read, write and execute permissions are visible here and you can toggle them and
 - you can see read permissions of all roles are no; means reflected successfully.
 
 ### similaryly check for other users(bob)
-- he is viewer means he has no access to manage users, roles, permissions
+- he is editor means he has access to manage users but not for roles, permissions
 ![image](https://github.com/user-attachments/assets/79abf324-12dc-4704-8cba-abc15ccaac4a)
 - he is editor and can edit the user permissions and can't edit roles and permissions
   ![image](https://github.com/user-attachments/assets/80819681-3430-4c62-87c2-3c6af35ced1e)
   ![image](https://github.com/user-attachments/assets/f12f3195-31d0-4689-9a33-b8f796ecfb02)
 
 ### similaryly check for other users(charlie)
+- he is viewer means he has no access to manage users, roles, permissions
 ![image](https://github.com/user-attachments/assets/a979391f-2788-4492-a78c-e7652056d986)
 ![image](https://github.com/user-attachments/assets/a63e15a0-18f7-4d6e-8a77-8bb5dab30779)
 ![image](https://github.com/user-attachments/assets/9c472e85-c8ce-490c-b1fb-5e73a37971d0)
